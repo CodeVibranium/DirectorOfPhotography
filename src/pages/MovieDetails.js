@@ -75,6 +75,13 @@ function Award({ title, description }) {
 
 const Main = styled.div`
   color: white;
+
+  @media (max-width: 1030px) {
+    margin-bottom: 850px;
+  }
+  @media (max-width: 770px) {
+    margin-bottom: 450px;
+  }
   h1 {
     font-size: 55px;
     text-align: center;
@@ -89,6 +96,12 @@ const Main = styled.div`
     height: 100vh;
     object-fit: cover;
     object-position: 50% 40%;
+    @media (max-width: 770px) {
+      height: 500px;
+    }
+    @media (max-width: 1030px) {
+      height: 500px;
+    }
   }
   h2 {
     margin: 1.5rem 0;
@@ -122,6 +135,12 @@ const Main = styled.div`
       height: 100vh;
       object-fit: cover;
       object-position: 0% 85%;
+      @media (max-width: 770px) {
+        height: 200px;
+      }
+      @media (max-width: 1030px) {
+        height: 300px;
+      }
     }
   }
 `;

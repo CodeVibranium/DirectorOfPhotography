@@ -45,6 +45,14 @@ const WorkDiv = styled(motion.div)`
   min-height: 100vh;
   padding: 5rem 10rem;
   background-color: white;
+  @media (max-width: 1030px) {
+    margin-bottom: 750px;
+    padding: 5rem 5rem;
+  }
+  @media (max-width: 770px) {
+    margin-bottom: 450px;
+    padding: 5rem 3rem;
+  }
 `;
 const Movie = styled.div`
   padding-bottom: 5rem;
@@ -65,7 +73,7 @@ const Image = styled(motion.img)`
   align-self: center;
   margin: 0 auto;
   width: 100%;
-  height: 80vh;
+  height: 500px;
   object-fit: cover;
   object-position: 0 7 0%;
 `;

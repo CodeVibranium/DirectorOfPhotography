@@ -33,10 +33,22 @@ const Main = styled(motion.div)`
   display: flex;
   justify-content: space-around;
   align-items: center;
+  @media (max-width: 770px) {
+    height: 50vh;
+  }
+  @media (max-width: 1030px) {
+    height: 50vh;
+  }
   div {
     ul {
       li {
         font-size: 60px;
+        @media (max-width: 770px) {
+          font-size: 35px;
+        }
+        @media (max-width: 1030px) {
+          font-size: 35px;
+        }
         cursor: pointer;
         font-weight: bolder;
         list-style-type: disc;

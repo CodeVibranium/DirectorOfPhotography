@@ -32,23 +32,46 @@ function Aboutsection() {
           </ContactBtn>
         </div>
       </div>
+
       <CameraMan>
-        <motion.img variants={photoAnim} src={home1} alt="Cameraman" />
+        <motion.img
+          style={{ height: "500px" }}
+          // style="height:500px;"
+          variants={photoAnim}
+          src={home1}
+          alt="Cameraman"
+        />
       </CameraMan>
+
       <Wave />
     </About>
   );
 }
 
 //styled components
+
 const About = styled.div`
   display: flex;
-
   justify-content: space-evenly;
   align-items: center;
-  padding: 5rem 10rem;
+  padding: 5rem 8rem;
   color: white;
+  @media (max-width: 770px) {
+    padding: 40px 40px;
+  }
+  .Description {
+    @media (max-width: 1100px) {
+      display: flex;
+      justify-content: space-between;
+    }
+    @media (max-width: 1300px) {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+  }
 `;
+
 const CameraMan = styled.div`
   display: flex;
   /* flex: 1; */
@@ -57,6 +80,7 @@ const CameraMan = styled.div`
     height: 80vh;
     object-fit: cover;
   }
+  }
 `;
 const Title = styled(motion.div)`
   line-height: 200%;
@@ -64,6 +88,15 @@ const Title = styled(motion.div)`
   font-weight: 200;
   span {
     color: #23d997;
+  }
+  @media (max-width: 1100px) {
+    font-size: 200%;
+  }
+  @media (max-width: 1300px) {
+    font-size: 250%;
+  }
+  @media (max-width: 769px) {
+    font-size: 230%;
   }
 `;
 const Tagline = styled(motion.p)`
@@ -94,6 +127,10 @@ const ContactBtn = styled(motion.button)`
   }
   &:hover::before {
     transform: translateX(85%) rotate(45deg);
+  }
+  @media (max-width: 1100px) {
+    font-size: 15px;
+    padding: 10px 30px;
   }
 `;
 

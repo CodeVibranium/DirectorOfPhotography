@@ -65,7 +65,14 @@ const Faq = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  /* margin: 5rem 8rem; */
   color: White;
+  @media (max-width: 1030px) {
+    margin: 0 40px 750px 40px;
+  }
+  @media (max-width: 770px) {
+    margin: 0 40px 380px 40px;
+  }
   h2 {
     margin: 8% 0 3% 0;
     font-size: 40px;
@@ -93,6 +100,9 @@ const Faq = styled.div`
         height: 10%;
         margin: 5% 0 0 0;
         background-color: white;
+        @media (max-width: 770px) {
+          margin: 7% 0 0 0;
+        }
       }
     }
     .answer {
